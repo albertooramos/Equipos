@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddSongFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="783dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutTitle"
+                android:layout_width="340dp"
+                android:layout_height="51dp"
+                android:layout_marginBottom="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/insert_song_title" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutArtist"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/insert_singer_band" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutAlbum"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/album"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/inset_album" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutYear"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/insert_year"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="340dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.906" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
